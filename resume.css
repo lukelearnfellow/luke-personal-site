@@ -1,0 +1,53 @@
+:root{
+  --bg:#f6f7fb;--card:#fff;--text:#141720;--muted:#667085;
+  --line:rgba(20,23,32,.12);--blue:#4361ee;--violet:#8f74ff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:radial-gradient(circle at 10% 0%,rgba(121,215,242,.18),transparent 28%),
+  radial-gradient(circle at 92% 8%,rgba(143,116,255,.16),transparent 28%),var(--bg);
+  color:var(--text);font-family:"DM Sans",sans-serif;line-height:1.45;
+}
+.page{width:8.5in;min-height:11in;margin:28px auto;padding:.45in;background:rgba(255,255,255,.84);
+  border:1px solid rgba(255,255,255,.9);border-radius:28px;box-shadow:0 30px 90px rgba(48,58,95,.14)}
+header{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:start;border-bottom:1px solid var(--line);padding-bottom:18px}
+h1{font-family:"Space Grotesk";font-size:42px;letter-spacing:-.06em;line-height:.95;margin:0}
+.tag{margin-top:8px;font-weight:700;color:var(--blue)}
+.grad{height:5px;width:160px;border-radius:999px;margin-top:14px;background:linear-gradient(90deg,var(--blue),var(--violet))}
+.contact{text-align:right;font-size:12.5px;color:var(--muted);line-height:1.65}
+section{margin-top:18px}
+.label{font-family:"Space Grotesk";font-size:11px;font-weight:700;letter-spacing:.16em;color:var(--blue);text-transform:uppercase;margin-bottom:8px}
+.summary{font-size:13.5px;color:#2d3340}
+.grid{display:grid;grid-template-columns:1.45fr .75fr;gap:20px}
+.card{background:rgba(255,255,255,.76);border:1px solid var(--line);border-radius:18px;padding:14px 16px;margin-bottom:12px}
+h2{font-family:"Space Grotesk";font-size:16px;letter-spacing:-.03em;margin:0}
+.meta{font-size:11.5px;color:var(--muted);font-weight:700;margin:3px 0 8px}
+ul{margin:0;padding-left:18px}
+li{font-size:12.3px;margin:4px 0}
+.side .card{padding:13px}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:11.5px;font-weight:700;padding:5px 8px;border-radius:999px;background:#edf1ff;color:#3145b7}
+.small{font-size:12.1px;color:var(--muted)}
+.achievement{font-size:12.2px;margin:6px 0}
+strong{color:#202432}
+@media print{
+  body{background:white}
+  .page{
+    width:auto;
+    min-height:auto;
+    margin:0;
+    padding:.18in;
+    border:0;
+    border-radius:0;
+    box-shadow:none;
+  }
+  @page{size:Letter;margin:.22in}
+  .card{padding:9px 11px;margin-bottom:7px;border-radius:12px}
+  section{margin-top:10px;break-inside:auto}
+  h1{font-size:34px}
+  h2{font-size:13.5px}
+  li{font-size:10.4px;margin:2px 0}
+  .summary,.small{font-size:10.8px}
+  .label{font-size:9.5px;margin-bottom:5px}
+  .meta{font-size:9.7px;margin-bottom:5px}
+}
