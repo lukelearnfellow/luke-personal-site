@@ -1,30 +1,11 @@
-LUKE PERSONAL SITE — READY TO UPLOAD
+Luke Rapaka personal site
 
-Folder structure:
+Deploy to GitHub Pages:
+1. Upload the CONTENTS of this folder to the root of the GitHub repository.
+2. In GitHub: Settings > Pages > Deploy from a branch > main > /(root).
+3. Replace Assets/profile-placeholder.svg with your actual photo if desired. Either:
+   - name it profile-placeholder.svg (not recommended), OR
+   - change the image src in index.html to your file, e.g. Assets/profile.png.
+4. Replace the LinkedIn and Instagram placeholder URLs in index.html and Pages/workshops.html.
 
-index.html
-script.js
-profile.png
-CSS/
-  styles.css
-  resume.css
-Pages/
-  workshops.html
-  resume.html
-
-UPLOAD TO GITHUB
-1. Replace the files in your repository with everything inside this folder.
-2. Preserve the CSS and Pages folders.
-3. Commit the changes.
-4. Wait for GitHub Pages to redeploy.
-5. Open the site in a private tab or hard-refresh to avoid cached CSS.
-
-IMPORTANT
-- Home page: index.html
-- AI Workshops: Pages/workshops.html
-- Resume: Pages/resume.html
-- Main stylesheet: CSS/styles.css
-- Resume stylesheet: CSS/resume.css
-- Shared JavaScript: script.js
-
-The mobile menu works on the home page and workshops page.
+The site requires no build process.
